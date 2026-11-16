@@ -1,7 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kevin J. Reece</title>
+  <meta name="description" content="Kevin J. Reece: engineering manager and software engineer in Salt Lake City, Utah.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <main>
+    <header class="intro">
+      <p class="eyebrow">Salt Lake City, Utah</p>
+      <h1>Kevin J. Reece</h1>
+      <p class="lede">Software engineer turned engineering manager. I care about building teams that ship good software, and I still like building small things myself on the side, especially where code meets images, games, and storytelling.</p>
+      <nav class="links" aria-label="Elsewhere">
+        <a href="https://github.com/kevinjreece">GitHub</a>
+        <!-- Add more links here, for example:
+        <a href="https://www.linkedin.com/in/YOUR-HANDLE">LinkedIn</a>
+        <a href="mailto:you@example.com">Email</a>
+        -->
+      </nav>
+    </header>
+
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Side projects</h2>
+      <ul class="projects">
+        <li>
+          <a class="project" href="https://github.com/kevinjreece/codex">
+            <span class="project-name">Story Board Canvas</span>
+            <span class="project-desc">Describe a scene in chat and watch an AI model illustrate it. Built for game masters and bedtime stories, and an experiment in AI-assisted development.</span>
+            <span class="tags">JavaScript · OpenAI API · 2025</span>
+          </a>
+        </li>
+        <li>
+          <a class="project" href="https://github.com/kevinjreece/image-project">
+            <span class="project-name">Image tracer</span>
+            <span class="project-desc">Turns photos into flat-color line drawings using edge detection and flood-fill region coloring, written from scratch with no image libraries.</span>
+            <span class="tags">TypeScript · 2019</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Kevin J. Reece</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
