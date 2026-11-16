@@ -93,6 +93,28 @@ section {
   border-top: 1px solid var(--line);
 }
 
+.facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fact-title {
+  display: block;
+  font-weight: 500;
+}
+
+.fact-desc,
+.plain {
+  display: block;
+  margin: 0;
+  color: var(--muted);
+}
+
+section + section {
+  margin-top: 3rem;
+}
+
 .projects {
   list-style: none;
   margin: 0;
